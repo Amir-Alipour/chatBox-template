@@ -57,8 +57,6 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.2rem;
 }
 
-
-
 .chats-profs {
   position: relative;
   margin: 0;
@@ -77,6 +75,16 @@ body::-webkit-scrollbar-thumb {
   width: 105%;
   height: 70px;
   border-bottom: 1px solid #555;
+}
+
+.header-of-chats img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #eee;
+    border-radius: 50%;
+    top: 15px;
+    left: 850px;
 }
 
 .chat-box {
@@ -99,48 +107,84 @@ body::-webkit-scrollbar-thumb {
 }
 
 .chat-user-prof {
-    width: 60px;
-    height: 50px;
-    background: #fff;
-    border-radius: 50%;
+  width: 60px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
 }
 
 .list-group-item {
-    width: 100%;
-    height: 80px;
-    color: #000;
+  width: 100%;
+  height: 80px;
+  color: #000;
 }
 
 .chatss {
-    width: 100%;
-    height: 91vh;
-    overflow-y: scroll;
+  width: 100%;
+  height: 91vh;
+  overflow-y: scroll;
 }
 
-.chatss::-webkit-scrollbar{
-    background: transparent;
+.chatss::-webkit-scrollbar {
+  background: none;
 }
 .chatss::-webkit-scrollbar-track {
-    background: transparent;
+  background: none;
 }
 .chatss::-webkit-scrollbar-thumb {
-    background: none;
+  background: none;
 }
 
 .nav-pills .nav-link.user-prof.active {
-    background: rgb(248, 248, 248);
-    color: #555;
-    border: none;
-    border-left: 3px solid var(--primary-color);
+  background: rgb(248, 248, 248);
+  color: #555;
+  border: none;
+  border-left: 3px solid var(--primary-color);
 }
 
 .user-prof {
-    border: none;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    border-right: 1px solid rgba(0,0,0,0.1);
-    width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .badge-light {
-    background: rgb(235, 235, 235);
+  background: rgb(235, 235, 235);
+}
+
+.searchbox {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: none;
+}
+
+.searchbox input {
+  border: none;
+  background: #eee;
+  position: relative;
+  top: 10px;
+  left: 25px;
+  width: 70%;
+  height: 30px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.searchbox input:focus {
+  outline: none;
+}
+
+.searchbox i {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    padding: 7px;
+    top: 10px;
+    left: 30px;
 }
