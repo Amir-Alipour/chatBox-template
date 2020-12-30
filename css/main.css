@@ -77,22 +77,11 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 1px solid #555;
 }
 
-.header-of-chats img {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    background: #eee;
-    border-radius: 50%;
-    top: 15px;
-    left: 850px;
-}
-
 .chat-box {
   padding: 0;
   margin: 0;
   position: relative;
   width: 100%;
-  z-index: -1;
 }
 
 #write-message {
@@ -181,10 +170,42 @@ body::-webkit-scrollbar-thumb {
 }
 
 .searchbox i {
-    position: relative;
-    height: 30px;
-    width: 30px;
-    padding: 7px;
-    top: 10px;
-    left: 30px;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  padding: 7px;
+  top: 10px;
+  left: 30px;
+}
+.dropdown-menu-prof {
+  background: rgb(248, 248, 248);
+  position: relative;
+  left: 770px;
+  display: none;
+  z-index: 2;
+}
+
+.dropdown-menu-prof a:hover {
+    background: #eee;
+}
+
+.dropdown-pic {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #eee;
+  border-radius: 50%;
+  top: 15px;
+  left: 870px;
+}
+
+.dropdown-prof {
+  position: relative;
+  display: inline-block;
+}
+
+.my-id {
+    position: absolute;
+    top: 15px;
+    left: 700px;
 }
