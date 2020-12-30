@@ -1,7 +1,11 @@
 @import url(./_values.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
+}
+* {
+  font-family: "Roboto", sans-serif;
 }
 
 /* body::-webkit-scrollbar{
@@ -17,3 +21,77 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid #fff;
 } */
 
+.navber-btns {
+  position: relative;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background: rgb(247, 247, 247);
+  padding-left: 10px;
+}
+
+.active {
+  border-radius: 0;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0;
+}
+
+.nav-pills .navbar-btn.active {
+  border-radius: 25px;
+  background: transparent;
+  color: var(--primary-color);
+}
+
+.nav-pills .navbar-btn {
+  width: 170px;
+  margin-bottom: 30px;
+  height: 50px;
+  padding: 12px 30px;
+  color: #111;
+  font-size: 1.2rem;
+}
+
+
+
+.chats-profs {
+  position: relative;
+  margin: 0;
+  left: 0;
+  padding-left: 11;
+  padding-right: 0;
+}
+
+.search-box {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #555;
+}
+
+.header-of-chats {
+  width: 105%;
+  height: 50px;
+  border-bottom: 1px solid #555;
+}
+
+.chat-box {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+#write-message {
+  position: relative;
+  top: -170px;
+  background: #937dff;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 30px;
+  padding: 10px 20px;
+}

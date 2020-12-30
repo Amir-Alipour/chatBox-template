@@ -2,43 +2,129 @@
 <html lang="">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Chat Template</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- custom css -->
-    <link rel="stylesheet" href="./css/main.css">
-
+    <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
-
     <main>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-1 col-lg-2 navber-btns">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <a class="nav-link" id="write-message"
+                                role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <i class="fas fa-pencil-alt pr-2"></i>
+                                Write message</a>
 
-        
+                            <a class="nav-link active navbar-btn" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                                role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <i class="fas fa-comment-alt mr-2"></i>
+                                Chat
+                            </a>
+                            <a class="nav-link navbar-btn" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                                role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                <i class="fas fa-user-alt mr-2"></i>
+                                Profile
+                            </a>
+                            <a class="nav-link navbar-btn" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                                role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                <i class="fa fa-clipboard mr-2" aria-hidden="true"></i>
+                                Notes
+                            </a>
+                            <a class="nav-link navbar-btn" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings"
+                                role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                <i class="fa fa-cog mr-2 mt-5" aria-hidden="true"></i>
+                                Settings
+                            </a>
+                            <a class="nav-link navbar-btn" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings"
+                                role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                <i class="fa fa-angle-double-left mr-2 mt-3" aria-hidden="true"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                    <!-- navbar end -->
 
+                    <div class="col-12 col-md-3 col-lg-3 chats-profs">
+                        <div class="row search-box">
+
+                        </div>
+                        <div class="row">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                    aria-labelledby="v-pills-home-tab">
+                                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                        aria-orientation="vertical">
+                                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill"
+                                            href="#v-pills-home-test" role="tab" aria-controls="v-pills-home"
+                                            aria-selected="true">Home</a>
+                                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
+                                            href="#v-pills-profile-test" role="tab" aria-controls="v-pills-profile"
+                                            aria-selected="false">Profile</a>
+                                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill"
+                                            href="#v-pills-messages-test" role="tab" aria-controls="v-pills-messages"
+                                            aria-selected="false">Messages</a>
+                                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
+                                            href="#v-pills-settings-test" role="tab" aria-controls="v-pills-settings"
+                                            aria-selected="false">Settings</a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                    aria-labelledby="v-pills-profile-tab"></div>
+                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                    aria-labelledby="v-pills-messages-tab"></div>
+                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                    aria-labelledby="v-pills-settings-tab"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- chats end -->
+
+                    <div class="col-12 col-md-8 col-lg-7 chat-box">
+                        <div class="row header-of-chats">
+
+                        </div>
+                        <div class="row">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-home-test" role="tabpanel"
+                                    aria-labelledby="v-pills-home-tab">
+
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile-test" role="tabpanel"
+                                    aria-labelledby="v-pills-profile-tab"></div>
+                                <div class="tab-pane fade" id="v-pills-messages-test" role="tabpanel"
+                                    aria-labelledby="v-pills-messages-tab"></div>
+                                <div class="tab-pane fade" id="v-pills-settings-test" role="tabpanel"
+                                    aria-labelledby="v-pills-settings-tab"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- chat box end -->
+                </div>
+            </div>
+        </section>
     </main>
-
-
-
-
-
-
-
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
     <!-- custom js file -->
     <script src="./js/script.js"></script>
 </body>
