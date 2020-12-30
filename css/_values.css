@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: transparent;
+    color: blueviolet;
+}
+
+:root {
+    --gradient-color: linear-gradient(to right, #673ab7, #813beb, #9e38de, #bc32ef, #dc22ff);
+    --bg-body: #fafafa;
+    --bg-object: #fff;
+}

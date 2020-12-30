@@ -1,0 +1,19 @@
+@import url(./_values.css);
+
+body{
+    overflow-x: hidden;
+}
+
+/* body::-webkit-scrollbar{
+    background: transparent;
+    width: 16px;
+}
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    background: none;
+    border-radius: 16px;
+    border: 3px solid #fff;
+} */
+
