@@ -69,13 +69,13 @@ body::-webkit-scrollbar-thumb {
 
 .search-box {
   width: 100%;
-  height: 50px;
+  height: 70px;
   border-bottom: 1px solid #555;
 }
 
 .header-of-chats {
   width: 105%;
-  height: 50px;
+  height: 70px;
   border-bottom: 1px solid #555;
 }
 
@@ -83,6 +83,8 @@ body::-webkit-scrollbar-thumb {
   padding: 0;
   margin: 0;
   position: relative;
+  width: 100%;
+  z-index: -1;
 }
 
 #write-message {
@@ -111,7 +113,7 @@ body::-webkit-scrollbar-thumb {
 
 .chatss {
     width: 100%;
-    height: 94vh;
+    height: 91vh;
     overflow-y: scroll;
 }
 
@@ -123,4 +125,22 @@ body::-webkit-scrollbar-thumb {
 }
 .chatss::-webkit-scrollbar-thumb {
     background: none;
+}
+
+.nav-pills .nav-link.user-prof.active {
+    background: rgb(248, 248, 248);
+    color: #555;
+    border: none;
+    border-left: 3px solid var(--primary-color);
+}
+
+.user-prof {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.badge-light {
+    background: rgb(235, 235, 235);
 }
