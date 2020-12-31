@@ -19,11 +19,17 @@ $(document).ready(function () {
   var profDropdownCounter = 0;
   $(".dropdown-pic").click(function (e) {
     if (profDropdownCounter === 0) {
-        profDropdownCounter = 1;
+      profDropdownCounter = 1;
       $(".dropdown-menu-prof").css("display", "block");
     } else {
       $(".dropdown-menu-prof").css("display", "none");
       profDropdownCounter = 0;
     }
   });
+
+  // --------------------
+
+  
+
+
 });

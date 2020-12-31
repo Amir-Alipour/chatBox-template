@@ -323,7 +323,7 @@
                                 <h5 class="m-0">Amir Alipour</h5>
                                 <small style="font-size: 0.7rem;">newcomer programmer </small>
                             </div>
-                            <h1 style="position: absolute; top: 10px; left: 830px;">|</h1>
+                            <h1 id="my-id-divider">|</h1>
 
                         </div>
                         <div class="row">
@@ -423,9 +423,16 @@
                         <div class="row">
                             <div class="typeBox">
                                 <i class="fa fa-microphone h5" aria-hidden="true"></i>
+                                <audio style="display: none;"></audio>
                                 <input type="text">
-                                <i class="fa fa-folder" aria-hidden="true"></i>
-                                <button class="btn send-btn">Send <i class="fab fa-telegram-plane" aria-hidden="true"></i></button>
+                                <div class="file-upload">
+                                    <label for="file-input">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                    </label>
+                                    <input type="file" id="file-input">
+                                </div>
+                                <button class="btn send-btn">Send <i class="fab fa-telegram-plane"
+                                        aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </div>

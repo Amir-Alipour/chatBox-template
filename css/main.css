@@ -181,9 +181,10 @@ body::-webkit-scrollbar-thumb {
 .dropdown-menu-prof {
   background: rgb(248, 248, 248);
   position: relative;
-  left: 770px;
+  left: 945px;
   display: none;
   z-index: 2;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-menu-prof a:hover {
@@ -197,7 +198,7 @@ body::-webkit-scrollbar-thumb {
   background: #eee;
   border-radius: 50%;
   top: 15px;
-  left: 870px;
+  left: 1050px;
 }
 
 .dropdown-prof {
@@ -208,7 +209,13 @@ body::-webkit-scrollbar-thumb {
 .my-id {
   position: absolute;
   top: 15px;
-  left: 700px;
+  left: 880px;
+}
+
+#my-id-divider {
+  position: absolute;
+  top: 7px;
+  left: 1010px;
 }
 
 .chatbox {
@@ -216,9 +223,10 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   left: 14px;
   padding: 50px;
-  height: 80vh;
+  height: 85vh;
   overflow-y: scroll;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: -10px 1px 30px rgba(0, 0, 0, 0.1);
 }
 
 .chatbox::-webkit-scrollbar {
@@ -237,7 +245,7 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid rgba(0, 0, 0, 0.2);
     height: 40px;
     border-radius: 25px;
-    top: 25px;
+    top: 23px;
     left: 90px;
 }
 
@@ -245,7 +253,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     top: 2px;
     left: 20px;
-    width: 73%;
+    width: 77%;
     border: none;
 }
 
@@ -298,4 +306,16 @@ body::-webkit-scrollbar-thumb {
 .send-btn:hover {
     border: 1px solid var(--primary-color);
     background: none;
+}
+
+.file-upload > input{
+  display: none;
+}
+
+.file-upload i {
+  cursor: pointer;
+}
+
+.file-upload {
+  display: inline;
 }
