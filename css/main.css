@@ -240,76 +240,76 @@ body::-webkit-scrollbar-thumb {
 }
 
 .typeBox {
-    position: relative;
-    width: 80%;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    height: 40px;
-    border-radius: 25px;
-    top: 23px;
-    left: 90px;
+  position: relative;
+  width: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 40px;
+  border-radius: 25px;
+  top: 23px;
+  left: 90px;
 }
 
 .typeBox input {
-    position: relative;
-    top: 2px;
-    left: 20px;
-    width: 77%;
-    border: none;
+  position: relative;
+  top: 2px;
+  left: 20px;
+  width: 77%;
+  border: none;
 }
 
 .typeBox input:focus {
-    outline: none;
+  outline: none;
 }
 
 .typeBox i.fa-microphone {
-    position: relative;
-    top: 4px;
-    border-radius: 50%;
-    left: 10px;
-    background: #eee;
-    width: 30px;
-    height: 30px;
-    padding: 5px 8px;
-    transition: all 0.3s;
+  position: relative;
+  top: 4px;
+  border-radius: 50%;
+  left: 10px;
+  background: #eee;
+  width: 30px;
+  height: 30px;
+  padding: 5px 8px;
+  transition: all 0.3s;
 }
 
 .typeBox i.fa-folder {
-    position: relative;
-    border-radius: 50%;
-    left: 30px;
-    top: 3px;
-    background: #eee;
-    width: 30px;
-    height: 30px;
-    padding: 7px 8px;
-    transition: all 0.3s;
+  position: relative;
+  border-radius: 50%;
+  left: 30px;
+  top: 3px;
+  background: #eee;
+  width: 30px;
+  height: 30px;
+  padding: 7px 8px;
+  transition: all 0.3s;
 }
 
 .typeBox i.fa-folder:hover {
-    background: var(--primary-color);
+  background: var(--primary-color);
 }
 .typeBox i.fa-microphone:hover {
-    background: var(--primary-color);
+  background: var(--primary-color);
 }
 
 .send-btn {
-    position: relative;
-    left: 45px;
-    top: 2px;
-    padding: 0px 12px;
-    border-radius: 25px;
-    height: 30px;
-    background: rgb(84, 57, 255);
-    border: none;
-    color: #fff;
+  position: relative;
+  left: 45px;
+  top: 2px;
+  padding: 0px 12px;
+  border-radius: 25px;
+  height: 30px;
+  background: rgb(84, 57, 255);
+  border: none;
+  color: #fff;
 }
 
 .send-btn:hover {
-    border: 1px solid var(--primary-color);
-    background: none;
+  border: 1px solid var(--primary-color);
+  background: none;
 }
 
-.file-upload > input{
+.file-upload > input {
   display: none;
 }
 
@@ -334,7 +334,7 @@ body::-webkit-scrollbar-thumb {
 .userChat {
   border-radius: 10px;
   background: rgb(245, 245, 245);
-  transition: all 0.3s; 
+  transition: all 0.3s;
   margin-top: 20px;
 }
 
@@ -346,7 +346,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: rgb(84, 57, 255);
   color: #fff;
-  transition: all 0.3s; 
+  transition: all 0.3s;
   margin-top: 20px;
 }
 

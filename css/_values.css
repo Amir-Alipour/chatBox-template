@@ -1,22 +1,30 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body,html{
-    margin: 0;
-    height: 0;
+body,
+html {
+  margin: 0;
+  height: 0;
 }
 
 *::selection {
-    background: transparent;
-    color: blueviolet;
+  background: transparent;
+  color: blueviolet;
 }
 
 :root {
-    --gradient-color: linear-gradient(to right, #673ab7, #813bcb, #9e38de, #bc32ef, #dc22ff);
-    --bg-body: #fafafa;
-    --bg-object: #fff;
-    --primary-color: #975eff;
+  --gradient-color: linear-gradient(
+    to right,
+    #673ab7,
+    #813bcb,
+    #9e38de,
+    #bc32ef,
+    #dc22ff
+  );
+  --bg-body: #fafafa;
+  --bg-object: #fff;
+  --primary-color: #975eff;
 }
