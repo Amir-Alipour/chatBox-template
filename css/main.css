@@ -365,11 +365,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .userEditDropdown {
-  width: 10px;
+  padding-left: 20px !important;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
-  display: none;
 }
 
 
@@ -384,34 +383,18 @@ body::-webkit-scrollbar-thumb {
   outline: none;
 }
 
-.myEditDropdown {
-  width: 130px;
-  background: #eee;
-  height: 230px;
-  color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-  z-index: 5;
-  position: absolute;
-  top: 80%;
-  right: 10%;
-  border-radius: 10px;
-  overflow: hidden;
-  display: none;
-}
 
-.myEditDropdown a {
-  font-style: none;
-  color: #111;
+.uk-dropdown-nav a {
+  transition: all 0.1s;
   width: 100%;
-  padding-left: 30px;
-  padding-top: 10px;
-  cursor: pointer;
+  height: 50px;
+  text-align: center;
 }
 
-.myEditDropdown a.myEditDropdown-item:hover {
-  text-decoration: none;
-  background: rgb(208, 208, 208);
+.uk-dropdown-nav a:nth-child(1) {
+  margin-top: 10px;
+}
+
+.uk-dropdown-nav a:hover {
+  color: rgb(112, 90, 255) !important;
 }
