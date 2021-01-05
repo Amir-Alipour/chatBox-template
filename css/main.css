@@ -365,35 +365,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .userEditDropdown {
-  width: 120px;
-  background: #eee;
-  height: 170px;
-  color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-  z-index: 5;
-  position: absolute;
-  top: 80%;
-  right: 10%;
   border-radius: 10px;
   overflow: hidden;
   display: none;
 }
 
-.userEditDropdown a {
-  font-style: none;
-  color: #111;
-  width: 100%;
-  padding-left: 30px;
-  padding-top: 10px;
-}
 
-.userEditDropdown a.userEditDropdown-item:hover {
-  text-decoration: none;
-  background: rgb(208, 208, 208);
-}
 
 .myEditBtn {
   outline: none;
@@ -429,6 +408,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   padding-left: 30px;
   padding-top: 10px;
+  cursor: pointer;
 }
 
 .myEditDropdown a.myEditDropdown-item:hover {

@@ -13,6 +13,8 @@
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.7/dist/css/uikit.min.css" />
     <!-- custom css -->
     <link rel="stylesheet" href="./css/main.css" />
 </head>
@@ -393,16 +395,21 @@
                                                     minima deleniti aliquid cumque. Aliquid molestias repudiandae harum
                                                     quo est dolorum atque, reiciendis maxime eveniet et, ab ullam.</p>
                                                 <small>22 : 01 pm</small>
-                                                <button class="editUserBtn float-right"><i class="fa fa-ellipsis-v"
-                                                        aria-hidden="true"></i></button>
+                                                <div class="d-inline float-right">
+                                                    <button class="editUserBtn float-right"><i class="fa fa-ellipsis-v"
+                                                            aria-hidden="true"></i></button>
+                                                    <div class="userEditDropdown" uk-dropdown="mode: click">
+                                                        <ul class="uk-nav uk-dropdown-nav">
+                                                            <li><a>Reply</a></li>
+                                                            <li><a>Copy</a></li>
+                                                            <li><a>Forward</a></li>
+                                                            <li><a>Report</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="userEditDropdown">
-                                            <a class="userEditDropdown-item">Reply</a>
-                                            <a class="userEditDropdown-item">Copy</a>
-                                            <a class="userEditDropdown-item">Forward</a>
-                                            <a class="userEditDropdown-item">Report</a>
-                                        </div>
+
                                     </div>
 
 
@@ -459,14 +466,14 @@
                                                         aria-hidden="true"></i></button>
                                             </div>
                                         </div>
-                                        <div class="myEditDropdown">
+                                        <section class="myEditDropdown">
                                             <a class="myEditDropdown-item">Reply</a>
                                             <a class="myEditDropdown-item">Copy</a>
                                             <a class="myEditDropdown-item">Forward</a>
                                             <a class="myEditDropdown-item">Report</a>
                                             <a class="myEditDropdown-item">Edit</a>
                                             <a class="myEditDropdown-item">Delet</a>
-                                        </div>
+                                        </section>
                                     </div>
 
                                 </div>
@@ -573,6 +580,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <!-- uikit js -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.7/dist/js/uikit-icons.min.js"></script>
     <!-- custom js file -->
     <script src="./js/script.js"></script>
 </body>

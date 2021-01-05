@@ -29,26 +29,5 @@ $(document).ready(function () {
 
   // --------------------
 
-  var UsereditCounter = 0;
-  $('.editUserBtn').click(function (e) { 
-    if (UsereditCounter === 0){
-      UsereditCounter = 1;
-      $('.userEditDropdown').css('display','flex');
-    }else {
-      $('.userEditDropdown').css('display','none');
-      UsereditCounter = 0;
-    }
-  });
-
-  var myeditCounter = 0;
-  $('.myEditBtn').click(function (e) { 
-    if (myeditCounter === 0){
-      myeditCounter = 1;
-      $('.myEditDropdown').css('display','flex');
-    }else {
-      $('.myEditDropdown').css('display','none');
-      myeditCounter = 0;
-    }
-  });
 
 });
