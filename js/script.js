@@ -29,5 +29,36 @@ $(document).ready(function () {
 
   // --------------------
 
+  $(".chatbox").scrollTop($(this).height());
 
+  $(".send-btn").click(function (e) {
+    var text = $(".textbox").val();
+
+    $(".tab-content>.active").append(
+      $('<div class="message-wrapper"></div>').append(
+        $(
+          '<div class="col-12 col-md-12 col-lg-12 col-xl-6 float-right"></div>'
+        ).append(
+          $('<div class="card myChat"></div>').append(
+            $('<div class="card-body"></div>').append(
+              $('<p class="card-text">' + text + "</p>")
+                .append('<div class="d-inline float-right></div>')
+                .append(
+                  $('<button class="editUserBtn float-right"></button>')
+                    .append(
+                      $('<i class="fa fa-ellipsis-v"aria-hidden="true"></i>')
+                    )
+                    .append(
+                      '<div class="uk-dropdown userEditDropdown" uk-dropdown="mode:click; pos: right" style="height: 400px;"><ul class"uk-nav uk-dropdown-nav edit-dropdown" style="list-style: none; margin: 0; padding: 0; padding-top:20px;"><li style="width: 100%; height:70px; text-align: center; margin-top:8px;"><a>Reply</a></li><li style="width: 100%; height:70px; text-align: center;"><a>Copy</a></li><li style="width: 100%; height:70px; text-align: center;"><a>Pin</a></li><li style="width: 100%; height:70px; text-align: center;"><a>Edit</a></li><li style="width: 100%; height:70px; text-align: center;"><a>Delet</a></li></ul></div>'
+                    )
+                )
+            )
+          )
+        )
+      )
+    );
+
+    $(".textbox").val(null);
+    $(".chatbox").scrollTop($('.chatbox').height());
+  });
 });
