@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   $("#searchArea").keyup(function () {
     var filter = this.value.toLowerCase(); // no need to call jQuery here
     $(".user-prof").each(function () {
@@ -41,8 +42,9 @@ $(document).ready(function () {
         ).append(
           $('<div class="card myChat"></div>').append(
             $('<div class="card-body"></div>').append(
-              $('<p class="card-text">' + text + "</p>")
-                .append('<div class="d-inline float-right></div>')
+              $('<p class="card-text">' + text + " <br> </p>").append(
+                $('<small>00 : 00</small>')
+              ).append('<div class="d-inline float-right></div>')
                 .append(
                   $('<button class="editUserBtn float-right"></button>')
                     .append(
@@ -61,4 +63,5 @@ $(document).ready(function () {
     $(".textbox").val(null);
     $(".chatbox").scrollTop($('.chatbox').height());
   });
+
 });
