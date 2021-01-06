@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  $(".chatbox.active").scrollTop($(".chatbox").height());
 
   $("#searchArea").keyup(function () {
     var filter = this.value.toLowerCase(); // no need to call jQuery here
