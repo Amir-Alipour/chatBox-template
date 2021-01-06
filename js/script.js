@@ -62,4 +62,6 @@ $(document).ready(function () {
     $(".textbox").val(null);
     $(".chatbox").scrollTop($(".chatbox").height());
   });
+
+  // -----------------------------
 });
