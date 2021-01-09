@@ -20,6 +20,8 @@
 </head>
 
 <body>
+    
+
     <main>
         <section>
             <div class="container-fluid">
@@ -322,31 +324,50 @@
                                     <i class="fa fa-angle-double-left mr-2 mt-3" aria-hidden="true"></i>
                                     Logout
                                 </a>
-                                <div uk-dropdown="mode:click; pos:right-center;">
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                        <label class="custom-control-label" for="customSwitch1">Last seen</label>
-                                    </div>
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="customSwitch123">
-                                        <label class="custom-control-label" for="customSwitch123">Toggle this switch
-                                            element</label>
-                                    </div>
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="customSwitch456">
-                                        <label class="custom-control-label" for="customSwitch456">Toggle this switch
-                                            element</label>
-                                    </div>
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="customSwitch789">
-                                        <label class="custom-control-label" for="customSwitch789">Toggle this switch
-                                            element</label>
-                                    </div>
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="customSwitch987">
-                                        <label class="custom-control-label" for="customSwitch987">Toggle this switch
-                                            element</label>
-                                    </div>
+                                <div uk-drop="mode:click; pos:right-center;" class="shadow">
+
+                                    <ul class="list-group">
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="lastseen-toggle"
+                                                    checked>
+                                                <label class="custom-control-label" for="lastseen-toggle">Last
+                                                    seen</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input"
+                                                    id="mediaAutoDown-toggle" checked>
+                                                <label class="custom-control-label" for="mediaAutoDown-toggle">Media
+                                                    auto download</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="notifs-toggle"
+                                                    checked>
+                                                <label class="custom-control-label"
+                                                    for="notifs-toggle">Notfications</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input"
+                                                    id="hideProfile-toggle">
+                                                <label class="custom-control-label" for="hideProfile-toggle">Hide
+                                                    Profile</label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input"
+                                                    id="hideUsername-toggle">
+                                                <label class="custom-control-label" for="hideUsername-toggle">Hide
+                                                    uername</label>
+                                            </div>
+                                        </li>
+                                    </ul>
 
                                 </div>
                             </div>
@@ -655,7 +676,7 @@
                                     <a class="dropdown-item notes-option" href="#">Notes</a>
                                     <a class="dropdown-item" href="#">About</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item text-danger" href="#">Logout</a>
+                                    <a class="dropdown-item text-danger" href="#" style="cursor: pointer;">Logout</a>
                                 </div>
                             </div>
                             <div class="my-id">

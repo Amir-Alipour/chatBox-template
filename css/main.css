@@ -183,7 +183,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   left: 945px;
   display: none;
-  z-index: 2;
+  z-index: 80;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
 }
 
