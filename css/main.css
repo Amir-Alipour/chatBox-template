@@ -446,6 +446,45 @@ body::-webkit-scrollbar-thumb {
   top: 50px;
 }
 
-.uk-background-muted.rounded-pill .uk-border-circle{
+.uk-background-muted.rounded-pill .uk-border-circle {
   cursor: pointer;
+}
+
+.profile-pic {
+  background: #eee;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.profile-header-name {
+  position: relative;
+  margin: 10px;
+}
+
+.fa-pencil {
+  position: absolute;
+  margin: 10px;
+  left: -25px;
+  top: 7px;
+  cursor: pointer;
+}
+
+.profile-header-username {
+  position: relative;
+  left: -200px;
+  top: 10px;
+}
+
+.hw-20 {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.font-size-sm {
+  font-size: 0.875rem;
+}
+
+.font-weight-medium {
+  font-weight: 500;
 }
