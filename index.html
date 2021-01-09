@@ -37,12 +37,29 @@
                                 <i class="fas fa-comment-alt mr-2"></i>
                                 Chat
                             </a>
-                            <a class="nav-link navbar-btn" id="v-pills-profile-tab" data-toggle="pill"
-                                href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+                            <a class="nav-link navbar-btn" id="v-pills-profile-tab" data-toggle="modal"
+                                href="#exampleModal"
                                 aria-selected="false">
                                 <i class="fas fa-user-alt mr-2"></i>
                                 Profile
                             </a>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      
+                                    </div>
+                                    <div class="modal-body">
+                                      
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancle</button>
+                                      <button type="button" class="btn btn-primary">Save Changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
                             <a class="nav-link navbar-btn" id="v-pills-messages-tab" data-toggle="pill"
                                 href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
                                 aria-selected="false">
@@ -342,7 +359,10 @@
                                 </div>
 
                                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                                    aria-labelledby="v-pills-profile-tab"></div>
+                                    aria-labelledby="v-pills-profile-tab">
+
+                                
+                                </div>
                                 <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                     aria-labelledby="v-pills-messages-tab"></div>
                                 <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
@@ -359,7 +379,7 @@
                                 <img src="./images/man (1).png" alt="prof" class="dropdown-pic" role="button">
 
                                 <div class="dropdown-menu-prof p-2">
-                                    <a class="dropdown-item" href="#">Prifile</a>
+                                    <a class="dropdown-item" href="#">Profile</a>
                                     <a class="dropdown-item" href="#">Notes</a>
                                     <a class="dropdown-item" href="#">About</a>
                                     <div class="dropdown-divider"></div>
@@ -1153,7 +1173,7 @@
 
                                     <div class="message-wrapper mt-5">
                                         <div
-                                            class="float-right uk-card uk-card-default uk-background-muted rounded-pill shadow uk-margin-small-left  uk-width-1-2@m ">
+                                            class="float-right uk-card uk-card-default uk-background-muted rounded-pill shadow uk-margin-small-left  uk-width-1-2@m">
                                             <div class="uk-card-header border-0">
                                                 <div class="uk-grid-small uk-flex-middle" uk-grid>
                                                     <div class="uk-width-auto">

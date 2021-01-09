@@ -63,4 +63,11 @@ $(document).ready(function () {
   });
 
   // -----------------------------
+
+    let chat = $('#v-pills-home');
+    let chatBox = $('.chat-box');
+
+    
+  
+
 });
