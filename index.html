@@ -42,8 +42,7 @@
                                 <i class="fas fa-user-alt mr-2"></i>
                                 Profile
                             </a>
-                            <div class="modal fade" id="profile-modal" tabindex="-1"
-                                aria-hidden="true">
+                            <div class="modal fade" id="profile-modal" tabindex="-1" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -205,8 +204,9 @@
                                                         <div class="media align-items-center">
                                                             <div class="media-body">
                                                                 <p class="small text-muted mb-0">Facebook</p>
-                                                                <a class="font-size-sm font-weight-medium"
-                                                                    href="#">@amir-alipour</a>
+                                                                <a class="font-size-sm font-weight-medium" href="#"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Not Real">@amir-alipour</a>
                                                             </div>
                                                             <!-- Default :: Inline SVG -->
                                                             <svg class="text-muted hw-20 ml-1" viewBox="0 0 24 24"
@@ -226,8 +226,9 @@
                                                         <div class="media align-items-center">
                                                             <div class="media-body">
                                                                 <p class="small text-muted mb-0">Twitter</p>
-                                                                <a class="font-size-sm font-weight-medium"
-                                                                    href="#">@amir-alipour</a>
+                                                                <a class="font-size-sm font-weight-medium" href="#"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Not Real">@amir-alipour</a>
                                                             </div>
                                                             <!-- Default :: Inline SVG -->
                                                             <svg class="text-muted hw-20 ml-1" viewBox="0 0 24 24"
@@ -247,8 +248,9 @@
                                                         <div class="media align-items-center">
                                                             <div class="media-body">
                                                                 <p class="small text-muted mb-0">Instagram</p>
-                                                                <a class="font-size-sm font-weight-medium"
-                                                                    href="#">@amir-alipour</a>
+                                                                <a class="font-size-sm font-weight-medium" href="#"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Not Real">@amir-alipour</a>
                                                             </div>
                                                             <!-- Default :: Inline SVG -->
                                                             <svg class="text-muted hw-20 ml-1" viewBox="0 0 24 24"
@@ -271,8 +273,9 @@
                                                         <div class="media align-items-center">
                                                             <div class="media-body">
                                                                 <p class="small text-muted mb-0">Linkedin</p>
-                                                                <a class="font-size-sm font-weight-medium"
-                                                                    href="#">@amir-alipour</a>
+                                                                <a class="font-size-sm font-weight-medium" href="#"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Not Real">@amir-alipour</a>
                                                             </div>
                                                             <!-- Default :: Inline SVG -->
                                                             <svg class="text-muted hw-20 ml-1" viewBox="0 0 24 24"
@@ -303,24 +306,50 @@
                                 </div>
                             </div>
 
-                            <a class="nav-link navbar-btn" id="v-pills-messages-tab" data-toggle="pill"
-                                href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
-                                aria-selected="false">
+                            <a class="nav-link navbar-btn notes-option" id="v-pills-messages-tab" href="#">
                                 <i class="fa fa-clipboard mr-2" aria-hidden="true"></i>
                                 Notes
                             </a>
-                            <a class="nav-link navbar-btn" id="v-pills-settings-tab"
-                                href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
-                                aria-selected="false">
+
+                            <a class="nav-link navbar-btn" id="v-pills-settings-tab" href="#"
+                                aria-controls="v-pills-settings">
                                 <i class="fa fa-cog mr-2 mt-5" aria-hidden="true"></i>
                                 Settings
                             </a>
-                            <a class="nav-link navbar-btn" id="v-pills-settings-tab"
-                                href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
-                                aria-selected="false">
-                                <i class="fa fa-angle-double-left mr-2 mt-3" aria-hidden="true"></i>
-                                Logout
-                            </a>
+                            <div class="d-inline">
+                                <a class="nav-link navbar-btn" id="v-pills-settings-tab" href="#"
+                                    aria-controls="v-pills-settings">
+                                    <i class="fa fa-angle-double-left mr-2 mt-3" aria-hidden="true"></i>
+                                    Logout
+                                </a>
+                                <div uk-dropdown="mode:click; pos:right-center;">
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                        <label class="custom-control-label" for="customSwitch1">Last seen</label>
+                                    </div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch123">
+                                        <label class="custom-control-label" for="customSwitch123">Toggle this switch
+                                            element</label>
+                                    </div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch456">
+                                        <label class="custom-control-label" for="customSwitch456">Toggle this switch
+                                            element</label>
+                                    </div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch789">
+                                        <label class="custom-control-label" for="customSwitch789">Toggle this switch
+                                            element</label>
+                                    </div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch987">
+                                        <label class="custom-control-label" for="customSwitch987">Toggle this switch
+                                            element</label>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- navbar end -->
@@ -623,7 +652,7 @@
 
                                 <div class="dropdown-menu-prof p-2">
                                     <a class="dropdown-item" href="#profile-modal" data-toggle="modal">Profile</a>
-                                    <a class="dropdown-item" href="#">Notes</a>
+                                    <a class="dropdown-item notes-option" href="#">Notes</a>
                                     <a class="dropdown-item" href="#">About</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item text-danger" href="#">Logout</a>
@@ -3178,12 +3207,100 @@
                     </div>
                     <!-- chat box end -->
                 </div>
+
+                <div class="notes-wrapper col-12 col-md-6 col-lg-2">
+                    <div class="notes-header d-flex justify-content-between">
+                        <h3>Notes</h3>
+                        <i class="fas fa-times h3 close-notes" aria-hidden="true"></i>
+                    </div>
+                    <!-- end notes header -->
+                    <div class="notes-body">
+                        <div class="note-wrapper">
+                            <h3>2020/04/14</h3>
+                            <h5>5 Note remaining</h5>
+                            <div class="note-box">
+                                <div class="note">
+                                    <input type="checkbox" class="form-check-input note-check">
+                                    <h4 class="note-text">Dinner with merad</h4>
+                                </div>
+                                <div class="note">
+                                    <input type="checkbox" class="form-check-input note-check" checked>
+                                    <h4 class="note-text complete-note">Go gym in 10:30PM</h4>
+                                </div>
+                                <div class="note">
+                                    <input type="checkbox" class="form-check-input note-check">
+                                    <h4 class="note-text">Whatch Tenet movie</h4>
+                                </div>
+                                <div class="note">
+                                    <input type="checkbox" class="form-check-input note-check">
+                                    <h4 class="note-text">Daily practice</h4>
+                                </div>
+                                <div class="note">
+                                    <input type="checkbox" class="form-check-input note-check">
+                                    <h4 class="note-text">Meeting my friends</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="note-wrapper">
+                            <h3>2020/04/13</h3>
+                            <h5>3 Note remaining</h5>
+                            <div class="note-box">
+                                <div class="note">
+                                    <input type="checkbox" class="form-check-input note-check">
+                                    <h4 class="note-text">morning train</h4>
+                                </div>
+                                <div class="note">
+                                    <input type="checkbox" class="form-check-input note-check" checked>
+                                    <h4 class="note-text complete-note">Eat breakfast</h4>
+                                </div>
+                                <div class="note">
+                                    <input type="checkbox" class="form-check-input note-check" checked>
+                                    <h4 class="note-text complete-note">Daily practice</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="note-wrapper">
+                            <h3>2020/04/12</h3>
+                            <h5>4 Note remaining</h5>
+                            <div class="note-box">
+                                <div class="note">
+                                    <input type="checkbox" class="form-check-input note-check">
+                                    <h4 class="note-text">Eat breakfast</h4>
+                                </div>
+                                <div class="note">
+                                    <input type="checkbox" class="form-check-input note-check" checked>
+                                    <h4 class="note-text complete-note">Talk with ali</h4>
+                                </div>
+                                <div class="note">
+                                    <input type="checkbox" class="form-check-input note-check">
+                                    <h4 class="note-text">Go market for buy</h4>
+                                </div>
+                                <div class="note">
+                                    <input type="checkbox" class="form-check-input note-check" checked>
+                                    <h4 class="note-text complete-note">Dinner with family</h4>
+                                </div>
+                                <div class="note">
+                                    <input type="checkbox" class="form-check-input note-check" checked>
+                                    <h4 class="note-text complete-note">Daily practice</h4>
+                                </div>
+                                <div class="note">
+                                    <input type="checkbox" class="form-check-input note-check" checked>
+                                    <h4 class="note-text complete-note">Go park</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"

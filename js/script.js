@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+  // ----------------
 
   $("#searchArea").keyup(function () {
     var filter = this.value.toLowerCase(); // no need to call jQuery here
@@ -64,10 +68,14 @@ $(document).ready(function () {
 
   // -----------------------------
 
-    let chat = $('#v-pills-home');
-    let chatBox = $('.chat-box');
+  let notes = $(".notes-wrapper");
+  let closeNote = $(".close-notes");
+  let openNote = $('.notes-option');
 
-    
-  
-
+  openNote.click(function () {
+    notes.css('right','0');
+  })
+  closeNote.click(function () {
+    notes.css('right','-500px')
+  })
 });

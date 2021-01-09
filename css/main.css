@@ -128,7 +128,7 @@ body::-webkit-scrollbar-thumb {
   background: rgb(248, 248, 248);
   color: #555;
   border: none;
-  border-left: 3px solid var(--primary-color);
+  border-left: 3px solid rgb(84, 57, 255);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -219,7 +219,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .chatbox {
-  width: 98%;
+  width: 100%;
   position: relative;
   left: 14px;
   padding: 50px;
@@ -487,4 +487,87 @@ body::-webkit-scrollbar-thumb {
 
 .font-weight-medium {
   font-weight: 500;
+}
+
+/* ----------------- */
+
+.notes-wrapper {
+  position: absolute;
+  top: 0;
+  right: -500px;
+  height: 100vh;
+  background: rgb(250, 250, 250);
+  box-shadow: -10px -10px 15px rgba(0, 0, 0, 0.2);
+  color: #111;
+  z-index: 100;
+  transition: all 0.8s cubic-bezier(1, 0, 0, 1);
+}
+
+.notes-header {
+  padding: 20px;
+  width: 100%;
+  height: 49px;
+  margin-bottom: 20px;
+}
+
+.notes-body {
+  width: 100%;
+  height: 90%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.note-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+
+.note-wrapper h3 {
+  margin: 0;
+}
+
+.note-wrapper h5 {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.note-box {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 40px;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.note-text {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.note-check {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.note-check:checked {
+  background: #000;
+}
+
+.note {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.complete-note {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: line-through;
+}
+
+.close-notes {
+  cursor: pointer;
+}
+
+.notes-option {
+  cursor: pointer;
 }
