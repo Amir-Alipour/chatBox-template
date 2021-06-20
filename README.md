@@ -11,11 +11,3 @@ Https://amir-alipour.github.io/chatBox-template/
 
 # ------------------------------- 
 ![](images/Screenshot%20(57).png)
-# ------------------------------- 
-![](images/Screenshot%20(58).png) 
-# ------------------------------- 
-![](images/Screenshot%20(59).png)
-# ------------------------------- 
-![](images/Screenshot%20(61).png)
-# ------------------------------- 
-![](images/Screenshot%20(62).png)
